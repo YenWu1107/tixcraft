@@ -1,0 +1,435 @@
+.main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 28px var(--gutter) 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 999 1 560px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== 保留倒數 ===== */
+.timer {
+  padding: 18px 22px;
+  border-radius: 22px;
+  background: var(--blue-soft);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.timerIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--blue);
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+.timerBody {
+  flex: 1 1 260px;
+}
+
+.timerTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--blue-ink);
+}
+
+.timerDesc {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #3a5a9e;
+}
+
+.progress {
+  margin-top: 10px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(26, 93, 214, 0.15);
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--blue);
+  transition: width 1s linear;
+}
+
+.clock {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--blue-ink);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+}
+
+/* ===== 表單區塊 ===== */
+.panel {
+  padding: 28px;
+}
+
+.h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pickups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.option {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.optionActive {
+  border-color: var(--blue);
+  box-shadow: inset 0 0 0 1px var(--blue);
+  background: var(--blue-tint);
+}
+
+.radio {
+  margin: 3px 0 0;
+  accent-color: var(--blue);
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.optionTitle {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.recommend {
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  vertical-align: 2px;
+}
+
+.optionDesc {
+  display: block;
+  margin-top: 3px;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.methods {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.method {
+  height: 46px;
+  padding: 0 20px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--card);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.method:hover {
+  background: var(--bg);
+}
+
+.methodActive,
+.methodActive:hover {
+  border-color: var(--blue);
+  box-shadow: inset 0 0 0 1px var(--blue);
+  background: var(--blue-tint);
+  font-weight: 600;
+}
+
+.cardForm {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.fieldFull {
+  grid-column: 1 / -1;
+}
+
+.inputWrap {
+  position: relative;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  border-radius: 14px;
+  border: 1px solid var(--line-strong);
+  background: var(--card);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text);
+  outline: none;
+}
+
+.input:focus {
+  border: 2px solid var(--blue);
+  padding: 0 15px;
+  box-shadow: 0 0 0 4px rgba(26, 93, 214, 0.12);
+}
+
+.cardInput {
+  padding-right: 44px;
+  letter-spacing: 1px;
+}
+
+.cardInput:focus {
+  padding-right: 43px;
+}
+
+.validIcon {
+  position: absolute;
+  right: 14px;
+  top: 15px;
+}
+
+.inputError,
+.inputError:focus {
+  border: 2px solid var(--red);
+  padding: 0 15px;
+  box-shadow: 0 0 0 4px rgba(196, 22, 28, 0.1);
+}
+
+.fieldError {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--red-ink);
+}
+
+.walletNote {
+  margin: 20px 0 0;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: var(--bg);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  color: var(--text-2);
+}
+
+.buyer {
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.buyerInfo {
+  flex: 1 1 260px;
+}
+
+.buyerText {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: var(--text-3);
+}
+
+.prefilled {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.edit {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== 訂單摘要 ===== */
+.aside {
+  flex: 1 1 340px;
+  position: sticky;
+  top: 84px;
+  background: var(--card);
+  border-radius: 28px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.eventRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 18px;
+  background: var(--bg);
+}
+
+.eventThumb {
+  position: relative;
+  width: 52px;
+  height: 64px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.eventName {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.eventMeta {
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.seat {
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px dashed var(--tier-3);
+  background: #f7faff;
+}
+
+.seatLabel {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.seatValue {
+  margin-top: 4px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.seatNote {
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.bill {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.bill > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bill dt {
+  color: var(--text-3);
+}
+
+.bill dd {
+  margin: 0;
+}
+
+.bill > .billTotal {
+  align-items: baseline;
+  padding-top: 12px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.billTotal dt {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.billTotal dd {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.agree {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  color: var(--text-2);
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.agreeError {
+  color: var(--red-ink);
+}
+
+.checkbox {
+  margin: 2px 0 0;
+  accent-color: var(--blue);
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.payBtn {
+  height: 54px;
+}
+
+.secure {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-3);
+}

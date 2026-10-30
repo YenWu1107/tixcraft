@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<title>選擇張數與座位視野</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F5F7}
+*{box-sizing:border-box}
+button,input,select{font-family:inherit}
+a{color:#1A5DD6}a:hover{color:#134BB3}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F5F5F7; color: #1D1D1F; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', 'Noto Sans TC', sans-serif; -webkit-font-smoothing: antialiased">
+
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(245,245,247,0.86); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid rgba(0,0,0,0.07)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; min-height: 60px; display: flex; align-items: center; gap: 36px; flex-wrap: wrap">
+<a href="Main.dc.html" aria-label="tixcraft 首頁" style="display: flex; align-items: baseline; gap: 8px; text-decoration: none"><span style="font-size: 22px; font-weight: 800; letter-spacing: -0.6px; color: #1A5DD6">tixcraft</span><span style="font-size: 11px; font-weight: 600; color: #6E6E73; letter-spacing: 0.5px">拓元售票</span></a>
+<nav aria-label="主要導覽" style="display: flex; gap: 28px; flex: 1; flex-wrap: wrap">
+<a href="Search.dc.html" style="font-size: 14px; font-weight: 600; color: #1D1D1F; text-decoration: none">節目</a>
+<a href="Main.dc.html" style="font-size: 14px; font-weight: 500; color: #424245; text-decoration: none">最新消息</a>
+<a href="#" style="font-size: 14px; font-weight: 500; color: #424245; text-decoration: none">常見問題</a>
+<a href="#" style="font-size: 14px; font-weight: 500; color: #424245; text-decoration: none">訂單查詢</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 8px">
+<button type="button" aria-label="語言與地區" style="height: 36px; padding: 0 12px; border: 1px solid #D2D2D7; border-radius: 999px; background: #FFFFFF; color: #1D1D1F; font-size: 13px; display: flex; align-items: center; gap: 6px; cursor: pointer"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>繁中 · TW</button>
+<a href="Login.dc.html" style="height: 36px; padding: 0 16px; border-radius: 999px; background: #1D1D1F; color: #FFFFFF; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px; text-decoration: none"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg>登入</a>
+</div>
+</div>
+</header>
+
+<div style="background: #FFFFFF; border-bottom: 1px solid #E8E8ED">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap">
+<div style="display: flex; align-items: center; gap: 14px">
+<div aria-hidden="true" style="position: relative; width: 48px; height: 60px; border-radius: 10px; background: #0B1230; overflow: hidden; flex: 0 0 auto"><div style="position: absolute; width: 34px; height: 34px; left: 7px; top: 6px; border-radius: 50%; background: #F5B65E"></div><div style="position: absolute; left: 5px; bottom: 5px; font-family: Anton, sans-serif; font-size: 11px; color: #FFFFFF; letter-spacing: 0.5px">LUMEN</div></div>
+<div>
+<div style="font-size: 16px; font-weight: 600">光年 LUMEN《回聲 ECHOES》臺北站</div>
+<div style="margin-top: 3px; font-size: 13px; color: #6E6E73">2026.12.12（六）19:30・臺北小巨蛋　<a href="Event.dc.html" style="text-decoration: none; font-weight: 500">更換場次</a></div>
+</div>
+</div>
+<ol aria-label="購票進度" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<li style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #1D1D1F"><span style="width: 26px; height: 26px; border-radius: 50%; background: #1A5DD6; color: #FFFFFF; display: grid; place-items: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span>選擇票區</li>
+<li aria-hidden="true" style="width: 28px; height: 2px; border-radius: 2px; background: #1A5DD6"></li>
+<li aria-current="step" style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #1D1D1F"><span style="width: 26px; height: 26px; border-radius: 50%; background: #1A5DD6; color: #FFFFFF; font-size: 13px; display: grid; place-items: center">2</span>張數與驗證</li>
+<li aria-hidden="true" style="width: 28px; height: 2px; border-radius: 2px; background: #D2D2D7"></li>
+<li style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #6E6E73"><span style="width: 26px; height: 26px; border-radius: 50%; background: #E8E8ED; color: #6E6E73; font-size: 13px; display: grid; place-items: center">3</span>付款</li>
+<li aria-hidden="true" style="width: 28px; height: 2px; border-radius: 2px; background: #D2D2D7"></li>
+<li style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #6E6E73"><span style="width: 26px; height: 26px; border-radius: 50%; background: #E8E8ED; color: #6E6E73; font-size: 13px; display: grid; place-items: center">4</span>完成</li>
+</ol>
+</div>
+</div>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 28px 24px 48px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+
+<section aria-labelledby="view-title" style="flex: 999 1 600px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: 28px">
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<div>
+<h1 id="view-title" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.4px">座位視野預覽</h1>
+<p style="margin: 6px 0 0; font-size: 15px; color: #6E6E73">從 S2 看台區望向舞台的示意畫面。</p>
+</div>
+<div role="tablist" aria-label="切換檢視" style="display: flex; gap: 4px; padding: 4px; border-radius: 999px; background: #E8E8ED">
+<button type="button" role="tab" aria-selected="true" style="height: 34px; padding: 0 16px; border: none; border-radius: 999px; background: #FFFFFF; color: #1D1D1F; font-size: 13px; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,0.1); cursor: pointer">視野預覽</button>
+<a href="Zone.dc.html" role="tab" aria-selected="false" style="height: 34px; padding: 0 16px; border-radius: 999px; color: #424245; font-size: 13px; font-weight: 500; display: flex; align-items: center; text-decoration: none">座位圖</a>
+</div>
+</div>
+
+<div style="margin-top: 20px; border-radius: 22px; overflow: hidden; background: #0E1324">
+<svg viewBox="0 0 640 380" role="img" aria-label="從 S2 看台區正面望向舞台的視野示意圖，可看到主螢幕與完整舞台" style="display: block; width: 100%; height: auto; font-family: -apple-system, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<defs>
+<linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD9A0"></stop><stop offset="0.5" stop-color="#F08A4B"></stop><stop offset="1" stop-color="#8A2E3B"></stop></linearGradient>
+<linearGradient id="beam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"></stop><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"></stop></linearGradient>
+<pattern id="crowd" width="9" height="7" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="3.5" r="1.8" fill="#FFFFFF" fill-opacity="0.16"></circle></pattern>
+</defs>
+<rect width="640" height="380" fill="#0E1324"></rect>
+<path d="M0 40 L640 40 M0 58 L640 58" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2"></path>
+<polygon points="250,160 180,0 220,0" fill="url(#beam)"></polygon>
+<polygon points="390,160 420,0 460,0" fill="url(#beam)"></polygon>
+<polygon points="320,160 300,0 340,0" fill="url(#beam)"></polygon>
+<polygon points="40,150 160,120 160,230 40,280" fill="#161D33"></polygon>
+<polygon points="600,150 480,120 480,230 600,280" fill="#161D33"></polygon>
+<rect x="232" y="74" width="176" height="78" rx="6" fill="url(#screen)"></rect>
+<rect x="176" y="92" width="44" height="34" rx="4" fill="url(#screen)" opacity="0.8"></rect>
+<rect x="420" y="92" width="44" height="34" rx="4" fill="url(#screen)" opacity="0.8"></rect>
+<rect x="222" y="152" width="196" height="30" rx="4" fill="#232C4A"></rect>
+<rect x="222" y="152" width="196" height="4" fill="#3C4A78"></rect>
+<polygon points="200,186 440,186 560,286 80,286" fill="#141A2E"></polygon>
+<polygon points="200,186 440,186 560,286 80,286" fill="url(#crowd)"></polygon>
+<path d="M320 186 L320 286" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"></path>
+<path d="M140 236 L500 236" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"></path>
+<rect x="20" y="300" width="600" height="20" rx="10" fill="#222A44"></rect>
+<rect x="0" y="328" width="640" height="22" rx="11" fill="#283152"></rect>
+<rect x="0" y="358" width="640" height="24" rx="12" fill="#2E385C"></rect>
+<rect x="282" y="327" width="34" height="24" rx="7" fill="#1A5DD6"></rect>
+<rect x="324" y="327" width="34" height="24" rx="7" fill="#1A5DD6"></rect>
+<rect x="250" y="276" width="140" height="30" rx="15" fill="#FFFFFF"></rect>
+<text x="320" y="296" text-anchor="middle" font-size="13" font-weight="700" fill="#1D1D1F">你的位置附近</text>
+</svg>
+</div>
+
+<div style="margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px">
+<div style="padding: 14px 16px; border-radius: 16px; background: #F5F5F7"><div style="font-size: 12px; color: #6E6E73">與舞台距離</div><div style="margin-top: 4px; font-size: 17px; font-weight: 700">約 32 公尺</div></div>
+<div style="padding: 14px 16px; border-radius: 16px; background: #F5F5F7"><div style="font-size: 12px; color: #6E6E73">視角</div><div style="margin-top: 4px; font-size: 17px; font-weight: 700">正面・微俯視</div></div>
+<div style="padding: 14px 16px; border-radius: 16px; background: #F5F5F7"><div style="font-size: 12px; color: #6E6E73">主螢幕</div><div style="margin-top: 4px; font-size: 17px; font-weight: 700">完整可見</div></div>
+</div>
+</section>
+
+<aside aria-labelledby="qty-title" style="flex: 1 1 360px; background: #FFFFFF; border-radius: 28px; padding: 24px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+<div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 4px; background: #A9C4F5"></span><span style="font-size: 13px; color: #6E6E73">看台區</span></div>
+<div style="margin-top: 4px; font-size: 24px; font-weight: 700">S2・NT$3,800</div>
+</div>
+<a href="Zone.dc.html" style="font-size: 14px; font-weight: 500; text-decoration: none; padding-top: 4px">重選票區</a>
+</div>
+
+<div>
+<h2 id="qty-title" style="margin: 0; font-size: 17px; font-weight: 600">購買張數</h2>
+<div style="margin-top: 12px; display: flex; align-items: center; justify-content: space-between; padding: 8px; border-radius: 999px; background: #F5F5F7">
+<button type="button" aria-label="減少一張" style="width: 44px; height: 44px; border-radius: 50%; border: none; background: #FFFFFF; color: #1D1D1F; display: grid; place-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.08); cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></button>
+<output aria-live="polite" style="font-size: 26px; font-weight: 700">2 張</output>
+<button type="button" aria-label="增加一張" style="width: 44px; height: 44px; border-radius: 50%; border: none; background: #1A5DD6; color: #FFFFFF; display: grid; place-items: center; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+</div>
+<p style="margin: 8px 0 0; font-size: 13px; color: #6E6E73; text-align: center">每人每場限購 4 張・實名制票券</p>
+</div>
+
+<fieldset style="margin: 0; padding: 0; border: none; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-size: 17px; font-weight: 600; margin-bottom: 12px; padding: 0">配位方式</legend>
+<label style="display: flex; gap: 12px; padding: 14px 16px; border-radius: 16px; border: 2px solid #1A5DD6; background: #F5F8FE; cursor: pointer">
+<input type="radio" name="seat" checked style="margin: 3px 0 0; accent-color: #1A5DD6; width: 18px; height: 18px">
+<span><span style="display: block; font-size: 15px; font-weight: 600">電腦配位・連號優先</span><span style="display: block; margin-top: 2px; font-size: 13px; color: #6E6E73">系統自動挑選同排相鄰座位</span></span>
+</label>
+<label style="display: flex; gap: 12px; padding: 14px 16px; border-radius: 16px; border: 1px solid #E5E5EA; cursor: pointer">
+<input type="radio" name="seat" style="margin: 3px 0 0; accent-color: #1A5DD6; width: 18px; height: 18px">
+<span><span style="display: block; font-size: 15px; font-weight: 600">接受不連號</span><span style="display: block; margin-top: 2px; font-size: 13px; color: #6E6E73">搶票成功率較高</span></span>
+</label>
+</fieldset>
+
+<div style="padding-top: 18px; border-top: 1px solid #F0F0F3; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; font-size: 14px; color: #6E6E73"><span>NT$3,800 × 2 張</span><span>NT$7,600</span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 15px; font-weight: 600">小計</span><span style="font-size: 24px; font-weight: 700">NT$7,600</span></div>
+<a href="Verify.dc.html" style="height: 52px; border-radius: 999px; background: #1A5DD6; color: #FFFFFF; font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none">下一步：安全驗證<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a>
+<p style="margin: 0; font-size: 13px; color: #6E6E73; display: flex; gap: 6px; align-items: flex-start"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5.5M12 7.8v.2"></path></svg>通過驗證後，系統會為你保留票券 10 分鐘。</p>
+</div>
+</aside>
+
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

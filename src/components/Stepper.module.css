@@ -1,0 +1,57 @@
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-3);
+}
+
+.reached {
+  color: var(--text);
+}
+
+.current {
+  font-weight: 600;
+}
+
+.num {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--fill);
+  color: var(--text-3);
+  font-size: 13px;
+  display: grid;
+  place-items: center;
+}
+
+.reached .num {
+  background: var(--blue);
+  color: #fff;
+}
+
+.reached .success {
+  background: var(--green);
+}
+
+.line {
+  width: 28px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--line-strong);
+}
+
+.lineDone {
+  background: var(--blue);
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<title>付款</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F5F7}
+*{box-sizing:border-box}
+button,input,select{font-family:inherit}
+a{color:#1A5DD6}a:hover{color:#134BB3}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F5F5F7; color: #1D1D1F; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', 'Noto Sans TC', sans-serif; -webkit-font-smoothing: antialiased">
+
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(245,245,247,0.86); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid rgba(0,0,0,0.07)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; min-height: 60px; display: flex; align-items: center; gap: 36px; flex-wrap: wrap">
+<a href="Main.dc.html" aria-label="tixcraft 首頁" style="display: flex; align-items: baseline; gap: 8px; text-decoration: none"><span style="font-size: 22px; font-weight: 800; letter-spacing: -0.6px; color: #1A5DD6">tixcraft</span><span style="font-size: 11px; font-weight: 600; color: #6E6E73; letter-spacing: 0.5px">拓元售票</span></a>
+<nav aria-label="主要導覽" style="display: flex; gap: 28px; flex: 1; flex-wrap: wrap">
+<a href="Search.dc.html" style="font-size: 14px; font-weight: 600; color: #1D1D1F; text-decoration: none">節目</a>
+<a href="Main.dc.html" style="font-size: 14px; font-weight: 500; color: #424245; text-decoration: none">最新消息</a>
+<a href="#" style="font-size: 14px; font-weight: 500; color: #424245; text-decoration: none">常見問題</a>
+<a href="#" style="font-size: 14px; font-weight: 500; color: #424245; text-decoration: none">訂單查詢</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 8px">
+<button type="button" aria-label="語言與地區" style="height: 36px; padding: 0 12px; border: 1px solid #D2D2D7; border-radius: 999px; background: #FFFFFF; color: #1D1D1F; font-size: 13px; display: flex; align-items: center; gap: 6px; cursor: pointer"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>繁中 · TW</button>
+<button type="button" aria-label="會員選單：林小葵" style="height: 36px; padding: 0 14px 0 5px; border-radius: 999px; background: #FFFFFF; border: 1px solid #D2D2D7; color: #1D1D1F; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px; cursor: pointer"><span aria-hidden="true" style="width: 26px; height: 26px; border-radius: 50%; background: #1A5DD6; color: #FFFFFF; font-size: 12px; display: grid; place-items: center">葵</span>林小葵</button>
+</div>
+</div>
+</header>
+
+<div style="background: #FFFFFF; border-bottom: 1px solid #E8E8ED">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap">
+<div style="display: flex; align-items: center; gap: 14px">
+<div aria-hidden="true" style="position: relative; width: 48px; height: 60px; border-radius: 10px; background: #0B1230; overflow: hidden; flex: 0 0 auto"><div style="position: absolute; width: 34px; height: 34px; left: 7px; top: 6px; border-radius: 50%; background: #F5B65E"></div><div style="position: absolute; left: 5px; bottom: 5px; font-family: Anton, sans-serif; font-size: 11px; color: #FFFFFF; letter-spacing: 0.5px">LUMEN</div></div>
+<div>
+<div style="font-size: 16px; font-weight: 600">光年 LUMEN《回聲 ECHOES》臺北站</div>
+<div style="margin-top: 3px; font-size: 13px; color: #6E6E73">2026.12.12（六）19:30・臺北小巨蛋</div>
+</div>
+</div>
+<ol aria-label="購票進度" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<li style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #1D1D1F"><span style="width: 26px; height: 26px; border-radius: 50%; background: #1A5DD6; color: #FFFFFF; display: grid; place-items: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span>選擇票區</li>
+<li aria-hidden="true" style="width: 28px; height: 2px; border-radius: 2px; background: #1A5DD6"></li>
+<li style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #1D1D1F"><span style="width: 26px; height: 26px; border-radius: 50%; background: #1A5DD6; color: #FFFFFF; display: grid; place-items: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span>張數與驗證</li>
+<li aria-hidden="true" style="width: 28px; height: 2px; border-radius: 2px; background: #1A5DD6"></li>
+<li aria-current="step" style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #1D1D1F"><span style="width: 26px; height: 26px; border-radius: 50%; background: #1A5DD6; color: #FFFFFF; font-size: 13px; display: grid; place-items: center">3</span>付款</li>
+<li aria-hidden="true" style="width: 28px; height: 2px; border-radius: 2px; background: #D2D2D7"></li>
+<li style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #6E6E73"><span style="width: 26px; height: 26px; border-radius: 50%; background: #E8E8ED; color: #6E6E73; font-size: 13px; display: grid; place-items: center">4</span>完成</li>
+</ol>
+</div>
+</div>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 28px 24px 48px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+
+<div role="timer" aria-label="票券保留剩餘 8 分 57 秒" style="padding: 18px 22px; border-radius: 22px; background: #EEF3FD; display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
+<div style="width: 44px; height: 44px; border-radius: 50%; background: #FFFFFF; color: #1A5DD6; display: grid; place-items: center; flex: 0 0 auto"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5V12l3 2"></path></svg></div>
+<div style="flex: 1 1 260px">
+<div style="font-size: 16px; font-weight: 600; color: #1A3F8F">票券已為你保留</div>
+<div style="margin-top: 2px; font-size: 14px; color: #3A5A9E">慢慢填沒關係，時間充足；逾時才會釋出給其他人。</div>
+<div style="margin-top: 10px; height: 6px; border-radius: 999px; background: rgba(26,93,214,0.15); overflow: hidden"><div style="width: 89%; height: 100%; border-radius: 999px; background: #1A5DD6"></div></div>
+</div>
+<div style="font-size: 32px; font-weight: 700; color: #1A3F8F; font-variant-numeric: tabular-nums; letter-spacing: 0.5px">08:57</div>
+</div>
+
+<section aria-labelledby="pickup-title" style="background: #FFFFFF; border-radius: 28px; padding: 28px">
+<h1 id="pickup-title" style="margin: 0 0 16px; font-size: 20px; font-weight: 700">取票方式</h1>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px">
+<label style="display: flex; gap: 12px; padding: 16px; border-radius: 18px; border: 2px solid #1A5DD6; background: #F5F8FE; cursor: pointer"><input type="radio" name="pickup" checked style="margin: 3px 0 0; accent-color: #1A5DD6; width: 18px; height: 18px"><span><span style="display: block; font-size: 15px; font-weight: 600">電子票券<span style="margin-left: 6px; padding: 2px 8px; border-radius: 999px; background: #1A5DD6; color: #FFFFFF; font-size: 11px; font-weight: 600; vertical-align: 2px">推薦</span></span><span style="display: block; margin-top: 3px; font-size: 13px; color: #6E6E73">存入會員中心，入場出示 QR Code・免手續費</span></span></label>
+<label style="display: flex; gap: 12px; padding: 16px; border-radius: 18px; border: 1px solid #E5E5EA; cursor: pointer"><input type="radio" name="pickup" style="margin: 3px 0 0; accent-color: #1A5DD6; width: 18px; height: 18px"><span><span style="display: block; font-size: 15px; font-weight: 600">超商取票</span><span style="display: block; margin-top: 3px; font-size: 13px; color: #6E6E73">開演前 7 天起可取票・NT$30／張</span></span></label>
+</div>
+</section>
+
+<section aria-labelledby="pay-title" style="background: #FFFFFF; border-radius: 28px; padding: 28px">
+<h2 id="pay-title" style="margin: 0 0 16px; font-size: 20px; font-weight: 700">付款方式</h2>
+<div role="radiogroup" aria-label="付款方式" style="display: flex; gap: 10px; flex-wrap: wrap">
+<button type="button" role="radio" aria-checked="true" style="height: 46px; padding: 0 20px; border-radius: 999px; border: 2px solid #1A5DD6; background: #F5F8FE; color: #1D1D1F; font-size: 15px; font-weight: 600; display: flex; align-items: center; gap: 8px; cursor: pointer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"></rect><path d="M3 10h18M7 15h3"></path></svg>信用卡</button>
+<button type="button" role="radio" aria-checked="false" style="height: 46px; padding: 0 20px; border-radius: 999px; border: 1px solid #D2D2D7; background: #FFFFFF; color: #1D1D1F; font-size: 15px; font-weight: 500; cursor: pointer">Apple Pay</button>
+<button type="button" role="radio" aria-checked="false" style="height: 46px; padding: 0 20px; border-radius: 999px; border: 1px solid #D2D2D7; background: #FFFFFF; color: #1D1D1F; font-size: 15px; font-weight: 500; cursor: pointer">LINE Pay</button>
+</div>
+<div style="margin-top: 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
+<label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">卡號
+<span style="position: relative; display: block"><input type="text" inputmode="numeric" value="4311 9522 0817 6402" autocomplete="cc-number" style="width: 100%; height: 50px; padding: 0 44px 0 16px; border-radius: 14px; border: 1px solid #D2D2D7; background: #FFFFFF; font-size: 16px; font-weight: 400; letter-spacing: 1px; color: #1D1D1F"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A7F37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: absolute; right: 14px; top: 15px"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span>
+</label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">到期日
+<input type="text" value="08 / 29" autocomplete="cc-exp" style="height: 50px; padding: 0 16px; border-radius: 14px; border: 1px solid #D2D2D7; background: #FFFFFF; font-size: 16px; font-weight: 400; color: #1D1D1F">
+</label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">安全碼
+<input type="text" inputmode="numeric" value="4" autocomplete="cc-csc" aria-invalid="true" aria-describedby="cvc-error" style="height: 50px; padding: 0 16px; border-radius: 14px; border: 2px solid #C4161C; background: #FFFFFF; font-size: 16px; font-weight: 400; color: #1D1D1F; box-shadow: 0 0 0 4px rgba(196,22,28,0.1)">
+<span id="cvc-error" style="display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: #A3141A"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5.5M12 16.3v.2"></path></svg>請輸入卡片背面的 3 位數安全碼</span>
+</label>
+</div>
+</section>
+
+<section aria-labelledby="buyer-title" style="background: #FFFFFF; border-radius: 28px; padding: 24px 28px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
+<div style="flex: 1 1 260px">
+<h2 id="buyer-title" style="margin: 0; font-size: 20px; font-weight: 700">購票人資料</h2>
+<p style="margin: 6px 0 0; font-size: 14px; color: #6E6E73">林小葵・0912-***-678・koi.lin@example.com</p>
+</div>
+<span style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #1A7F37"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>已帶入會員資料</span>
+<a href="#" style="font-size: 14px; font-weight: 500; text-decoration: none">編輯</a>
+</section>
+
+</div>
+
+<aside aria-labelledby="order-title" style="flex: 1 1 340px; position: sticky; top: 84px; background: #FFFFFF; border-radius: 28px; padding: 24px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 8px 30px rgba(0,0,0,0.06)">
+<h2 id="order-title" style="margin: 0; font-size: 20px; font-weight: 700">訂單摘要</h2>
+<div style="display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 18px; background: #F5F5F7">
+<div aria-hidden="true" style="position: relative; width: 52px; height: 64px; border-radius: 10px; background: #0B1230; overflow: hidden; flex: 0 0 auto"><div style="position: absolute; width: 36px; height: 36px; left: 8px; top: 7px; border-radius: 50%; background: #F5B65E"></div></div>
+<div><div style="font-size: 15px; font-weight: 600">LUMEN 臺北站</div><div style="margin-top: 2px; font-size: 13px; color: #6E6E73">12.12（六）19:30・臺北小巨蛋</div></div>
+</div>
+<div style="padding: 14px; border-radius: 16px; border: 1px dashed #A9C4F5; background: #F7FAFF">
+<div style="font-size: 12px; color: #6E6E73">你的座位</div>
+<div style="margin-top: 4px; font-size: 17px; font-weight: 700">S2 看台區 12 排 7、8 號</div>
+<div style="margin-top: 2px; font-size: 13px; color: #1A7F37; font-weight: 600">已成功配到連號座位</div>
+</div>
+<dl style="margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<div style="display: flex; justify-content: space-between"><dt style="color: #6E6E73">票價 NT$3,800 × 2</dt><dd style="margin: 0">NT$7,600</dd></div>
+<div style="display: flex; justify-content: space-between"><dt style="color: #6E6E73">系統服務費 NT$20 × 2</dt><dd style="margin: 0">NT$40</dd></div>
+<div style="display: flex; justify-content: space-between"><dt style="color: #6E6E73">取票手續費</dt><dd style="margin: 0">免費</dd></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: 12px; border-top: 1px solid #F0F0F3"><dt style="font-size: 16px; font-weight: 600">總計</dt><dd style="margin: 0; font-size: 26px; font-weight: 700">NT$7,640</dd></div>
+</dl>
+<label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #424245; line-height: 1.5; cursor: pointer"><input type="checkbox" checked style="margin: 2px 0 0; accent-color: #1A5DD6; width: 18px; height: 18px; flex: 0 0 auto">我已閱讀並同意 <a href="#" style="text-decoration: none">購票須知</a> 與 <a href="#" style="text-decoration: none">退票規則</a></label>
+<a href="Success.dc.html" style="height: 54px; border-radius: 999px; background: #1A5DD6; color: #FFFFFF; font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center; text-decoration: none">確認付款 NT$7,640</a>
+<p style="margin: 0; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; color: #6E6E73"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"></rect><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"></path></svg>付款資訊全程加密傳輸</p>
+</aside>
+
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "v": 3,
+  "createdOnFiles": {"v": 1, "at": "2026-10-18T08:25:00Z"},
+  "title": "拓元 Redesign",
+  "launch": {"view": "canvas"},
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {"x": 0, "y": 0, "w": 1440, "h": 2700, "title": "A1 首頁｜瀏覽主打與搜尋篩選", "expand": "fill", "is_interactive": true},
+    "Search.dc.html": {"x": 1520, "y": 0, "w": 1440, "h": 1640, "title": "A2 搜尋結果｜依類別、日期、地點篩選", "expand": "fill", "is_interactive": true},
+    "Event.dc.html": {"x": 3040, "y": 0, "w": 1440, "h": 1960, "title": "A3 活動詳情｜確認場次與票價", "expand": "fill", "is_interactive": true},
+    "Zone.dc.html": {"x": 0, "y": 3120, "w": 1440, "h": 1100, "title": "B1 選擇票區｜座位圖與票區清單連動", "expand": "fill", "is_interactive": true},
+    "Quantity.dc.html": {"x": 1520, "y": 3120, "w": 1440, "h": 1100, "title": "B2 選擇張數｜預覽座位視野", "expand": "fill", "is_interactive": true},
+    "Verify.dc.html": {"x": 3040, "y": 3120, "w": 1440, "h": 1100, "title": "B3 安全驗證｜輸入錯誤即時提示", "expand": "fill", "is_interactive": true},
+    "Login.dc.html": {"x": 0, "y": 4640, "w": 1440, "h": 1100, "title": "C1 登入提示｜說明登入原因", "expand": "fill", "is_interactive": true},
+    "Payment.dc.html": {"x": 1520, "y": 4640, "w": 1440, "h": 1100, "title": "C2 付款｜進度條與保留倒數", "expand": "fill", "is_interactive": true},
+    "Success.dc.html": {"x": 3040, "y": 4640, "w": 1440, "h": 1100, "title": "C3 購票成功｜訂單與票券", "expand": "fill", "is_interactive": true}
+  },
+  "order": ["Main.dc.html", "Search.dc.html", "Event.dc.html", "Zone.dc.html", "Quantity.dc.html", "Verify.dc.html", "Login.dc.html", "Payment.dc.html", "Success.dc.html"],
+  "notes": {
+    "flowA": {"x": 0, "y": -300, "text": "流程 A｜尋找目標活動並確認活動資訊", "kind": "title1", "maxW": 4480},
+    "flowB": {"x": 0, "y": 2820, "text": "流程 B｜快速選擇票區與數量", "kind": "title1", "maxW": 4480},
+    "flowC": {"x": 0, "y": 4340, "text": "流程 C｜會員登入與順暢結帳", "kind": "title1", "maxW": 4480}
+  },
+  "designSystems": []
+}

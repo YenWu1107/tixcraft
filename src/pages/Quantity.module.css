@@ -1,0 +1,311 @@
+.main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 28px var(--gutter) 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* ===== 視野預覽 ===== */
+.viewCard {
+  flex: 999 1 600px;
+  min-width: 0;
+  padding: 28px;
+}
+
+.head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.lead {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: var(--text-3);
+}
+
+.segmented {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--fill);
+}
+
+.segBtn {
+  height: 34px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-2);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.segBtn:hover {
+  color: var(--text);
+}
+
+.segActive {
+  background: var(--card);
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.view {
+  position: relative;
+  margin-top: 20px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #07080c;
+}
+
+.loading {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.youAreHere {
+  position: absolute;
+  left: 50%;
+  bottom: 9%;
+  transform: translateX(-50%);
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.facts {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.fact {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: var(--bg);
+}
+
+.factLabel {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.factValue {
+  margin-top: 4px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* ===== 右側張數 ===== */
+.side {
+  flex: 1 1 360px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.zoneRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.zoneTier {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.zoneName {
+  margin-top: 4px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.rechoose {
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 4px;
+}
+
+.h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.stepper {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 999px;
+  background: var(--bg);
+}
+
+.minus,
+.plus {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  display: grid;
+  place-items: center;
+}
+
+.minus {
+  background: var(--card);
+  color: var(--text);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.plus {
+  background: var(--blue);
+  color: #fff;
+}
+
+.plus:hover:not(:disabled) {
+  background: var(--blue-hover);
+}
+
+.minus:disabled,
+.plus:disabled {
+  background: var(--fill);
+  color: var(--text-4);
+  box-shadow: none;
+}
+
+.qty {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.limit {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--text-3);
+  text-align: center;
+}
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.legend {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.option {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.optionActive {
+  border-color: var(--blue);
+  box-shadow: inset 0 0 0 1px var(--blue);
+  background: var(--blue-tint);
+}
+
+.radio {
+  margin: 3px 0 0;
+  accent-color: var(--blue);
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.optionTitle {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.optionDesc {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.total {
+  padding-top: 18px;
+  border-top: 1px solid var(--line-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.calc {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text-3);
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.subtotalLabel {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.subtotalValue {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.hint {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-3);
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+}

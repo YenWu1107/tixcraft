@@ -1,0 +1,22 @@
+.art {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.orb,
+.ring {
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.ring {
+  border: 1.5px solid;
+}

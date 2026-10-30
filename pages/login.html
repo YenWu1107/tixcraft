@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>登入提示</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F5F7}
+*{box-sizing:border-box}
+button,input,select{font-family:inherit}
+a{color:#1A5DD6}a:hover{color:#134BB3}
+</style>
+</head>
+<body>
+<div style="position: relative; min-height: 100vh; background: #F5F5F7; color: #1D1D1F; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', 'Noto Sans TC', sans-serif; -webkit-font-smoothing: antialiased; overflow: hidden">
+
+<div aria-hidden="true">
+<header style="background: rgba(245,245,247,0.86); border-bottom: 1px solid rgba(0,0,0,0.07)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; min-height: 60px; display: flex; align-items: center; gap: 36px; flex-wrap: wrap">
+<span style="display: flex; align-items: baseline; gap: 8px"><span style="font-size: 22px; font-weight: 800; letter-spacing: -0.6px; color: #1A5DD6">tixcraft</span><span style="font-size: 11px; font-weight: 600; color: #6E6E73; letter-spacing: 0.5px">拓元售票</span></span>
+<span style="display: flex; gap: 28px; flex: 1; font-size: 14px; color: #424245"><span style="font-weight: 600; color: #1D1D1F">節目</span><span>最新消息</span><span>常見問題</span><span>訂單查詢</span></span>
+<span style="height: 36px; padding: 0 16px; border-radius: 999px; background: #1D1D1F; color: #FFFFFF; font-size: 13px; font-weight: 600; display: flex; align-items: center">登入</span>
+</div>
+</header>
+<div style="background: #FFFFFF; border-bottom: 1px solid #E8E8ED">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap">
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 48px; height: 60px; border-radius: 10px; background: #0B1230"></div>
+<div><div style="font-size: 16px; font-weight: 600">光年 LUMEN《回聲 ECHOES》臺北站</div><div style="margin-top: 3px; font-size: 13px; color: #6E6E73">2026.12.12（六）19:30・臺北小巨蛋</div></div>
+</div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #6E6E73"><span style="width: 26px; height: 26px; border-radius: 50%; background: #1A5DD6"></span>選擇票區<span style="width: 28px; height: 2px; background: #1A5DD6"></span><span style="width: 26px; height: 26px; border-radius: 50%; background: #1A5DD6"></span>張數與驗證<span style="width: 28px; height: 2px; background: #1A5DD6"></span><span style="width: 26px; height: 26px; border-radius: 50%; background: #1A5DD6"></span><strong style="color: #1D1D1F">付款</strong><span style="width: 28px; height: 2px; background: #D2D2D7"></span><span style="width: 26px; height: 26px; border-radius: 50%; background: #E8E8ED"></span>完成</div>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; gap: 24px; flex-wrap: wrap">
+<div style="flex: 999 1 560px; display: flex; flex-direction: column; gap: 20px">
+<div style="height: 64px; border-radius: 20px; background: #EEF3FD"></div>
+<div style="height: 260px; border-radius: 28px; background: #FFFFFF"></div>
+<div style="height: 320px; border-radius: 28px; background: #FFFFFF"></div>
+</div>
+<div style="flex: 1 1 340px; height: 520px; border-radius: 28px; background: #FFFFFF"></div>
+</div>
+</div>
+
+<div style="position: absolute; inset: 0; z-index: 40; background: rgba(29,29,31,0.4); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); display: flex; justify-content: center; align-items: flex-start; padding: 88px 24px 40px">
+<section role="dialog" aria-modal="true" aria-labelledby="login-title" style="position: relative; width: 100%; max-width: 460px; background: #FFFFFF; border-radius: 30px; padding: 36px 36px 28px; box-shadow: 0 30px 80px rgba(0,0,0,0.25); display: flex; flex-direction: column; gap: 20px">
+<a href="verify.html" aria-label="關閉" style="position: absolute; top: 18px; right: 18px; width: 34px; height: 34px; border-radius: 50%; background: #F0F0F3; color: #424245; display: grid; place-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7 7 17"></path></svg></a>
+
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px">
+<div style="width: 56px; height: 56px; border-radius: 50%; background: #EEF3FD; color: #1A5DD6; display: grid; place-items: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"></rect><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"></path></svg></div>
+<h2 id="login-title" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.3px">登入以保障你的票券</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E73">票券已為你保留。登入後會自動回到付款頁，<br>不需要重新選位。</p>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; background: #EEF3FD; color: #1A4FB8; font-size: 14px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5V12l3 2"></path></svg>保留時間剩餘 09:42</span>
+</div>
+
+<ul style="list-style: none; margin: 0; padding: 16px 18px; border-radius: 18px; background: #F5F5F7; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #424245">
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 1px"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>票券綁定本人帳號，防止盜用與轉賣</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 1px"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>訂單成立與取票通知即時寄到信箱</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 1px"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>隨時在會員中心查看票券、申請退票</li>
+</ul>
+
+<form style="display: flex; flex-direction: column; gap: 14px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Email 或手機號碼
+<input type="text" value="koi.lin@example.com" autocomplete="username" style="height: 50px; padding: 0 16px; border-radius: 14px; border: 1px solid #D2D2D7; background: #FFFFFF; font-size: 16px; font-weight: 400; color: #1D1D1F">
+</label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">
+<span style="display: flex; justify-content: space-between"><span>密碼</span><a href="#" style="font-size: 13px; font-weight: 500; text-decoration: none">忘記密碼？</a></span>
+<input type="password" value="tixcraft2026" autocomplete="current-password" style="height: 50px; padding: 0 16px; border-radius: 14px; border: 2px solid #1A5DD6; background: #FFFFFF; font-size: 16px; font-weight: 400; color: #1D1D1F; outline: none; box-shadow: 0 0 0 4px rgba(26,93,214,0.12)">
+</label>
+<a href="payment.html" style="margin-top: 4px; height: 52px; border-radius: 999px; background: #1A5DD6; color: #FFFFFF; font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center; text-decoration: none">登入並繼續付款</a>
+</form>
+
+<div style="display: flex; align-items: center; gap: 12px; font-size: 13px; color: #6E6E73"><span style="flex: 1; height: 1px; background: #E5E5EA"></span>或<span style="flex: 1; height: 1px; background: #E5E5EA"></span></div>
+<button type="button" style="height: 50px; border-radius: 999px; border: 1px solid #D2D2D7; background: #FFFFFF; color: #1D1D1F; font-size: 15px; font-weight: 600; cursor: pointer">使用 Google 帳號繼續</button>
+<p style="margin: 0; text-align: center; font-size: 14px; color: #6E6E73">還不是會員？<a href="#" style="font-weight: 600; text-decoration: none">30 秒完成註冊</a></p>
+</section>
+</div>
+
+</div>
+</body>
+</html>

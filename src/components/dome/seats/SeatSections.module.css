@@ -1,0 +1,128 @@
+/* 3D 看台上的浮動標籤（DomLabel：直接操作的 DOM，不用 drei Html） */
+
+/* 懸停提示框：定位點在分區上方，卡片往上長 */
+.tip {
+  transform: translate(-50%, calc(-100% - 10px));
+  min-width: 150px;
+  padding: 10px 12px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.45),
+    0 1px 3px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.tipHead {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex: none;
+}
+
+.tipTier {
+  color: var(--text-3);
+}
+
+.tipRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 2px;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.ok {
+  color: var(--green);
+}
+
+.few {
+  color: var(--orange);
+}
+
+.sold {
+  color: var(--text-4);
+}
+
+/* 已選分區的藥丸標籤 */
+.pill {
+  transform: translate(-50%, -100%);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px 6px 8px;
+  background: #fff;
+  border-radius: 999px;
+  box-shadow:
+    0 0 0 2px rgba(120, 165, 255, 0.55),
+    0 6px 22px rgba(26, 93, 214, 0.45),
+    0 1px 3px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  animation: pop 0.28s cubic-bezier(0.2, 0.9, 0.3, 1.3);
+}
+
+.check {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  font-size: 11px;
+}
+
+.pillTier {
+  color: var(--text-3);
+  font-weight: 500;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -80%) scale(0.9);
+  }
+}
+
+/* 樓層標示：暗色玻璃小晶片 */
+.level {
+  transform: translate(-50%, -50%);
+  padding: 2px 9px;
+  background: rgba(20, 22, 28, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}

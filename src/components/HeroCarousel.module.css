@@ -1,0 +1,292 @@
+/* ===== 主視覺輪播 ===== */
+.hero {
+  position: relative;
+  height: 660px;
+  background: #070a14;
+  overflow: hidden;
+  color: #fff;
+  touch-action: pan-y;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.9s ease, visibility 0s linear 0.9s;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.9s ease, visibility 0s;
+}
+
+.art {
+  position: absolute;
+  inset: 0;
+}
+
+/* 主視覺緩慢推近（Ken Burns） */
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.06);
+  transition: transform 8s ease-out;
+}
+
+.active .img {
+  transform: scale(1);
+}
+
+.watermark {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 120px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 300px;
+  line-height: 1;
+  letter-spacing: 12px;
+  color: rgba(255, 255, 255, 0.05);
+  white-space: nowrap;
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 10, 20, 0) 30%, rgba(7, 10, 20, 0.55) 62%, rgba(7, 10, 20, 0.92) 100%);
+}
+
+/* 文字：換頁時淡入並稍微往上 */
+.content {
+  position: absolute;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.6s ease;
+}
+
+.active .content {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.25s;
+}
+
+.tag {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 112px;
+  line-height: 0.95;
+  letter-spacing: 6px;
+  text-shadow: 0 6px 40px rgba(0, 0, 0, 0.35);
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.meta {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.78);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.cta {
+  min-width: 220px;
+}
+
+.cta[aria-pressed='true'] {
+  background: #fff;
+  color: var(--blue);
+}
+
+.glassBtn,
+.arrow,
+.playBtn {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.glassBtn:hover,
+.arrow:hover,
+.playBtn:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.glassBtn {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+}
+
+/* ===== 左右箭頭 ===== */
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 56px;
+  height: 56px;
+  margin-top: -28px;
+  border-radius: 50%;
+}
+
+.arrow:active {
+  transform: scale(0.94);
+}
+
+.arrowLeft {
+  left: max(24px, calc((100% - var(--max-w)) / 2));
+}
+
+.arrowRight {
+  right: max(24px, calc((100% - var(--max-w)) / 2));
+}
+
+/* ===== 圓點與暫停鈕 ===== */
+.controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 48px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+/* 擴大點擊範圍 */
+.dot::after {
+  content: '';
+  position: absolute;
+  inset: -8px -4px;
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.dotActive {
+  width: 36px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.dotFill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: #fff;
+  transform-origin: left center;
+  animation-name: fill;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* 沒有自動播放時，目前的圓點直接填滿 */
+.dotActive:not(:has(.dotFill)) {
+  background: #fff;
+}
+
+@keyframes fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.playBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    height: 560px;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+  }
+
+  .watermark {
+    font-size: 160px;
+  }
+
+  .arrow {
+    width: 44px;
+    height: 44px;
+    margin-top: -22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide,
+  .content,
+  .img {
+    transition: none;
+  }
+}

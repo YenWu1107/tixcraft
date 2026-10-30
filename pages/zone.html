@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>選擇票區</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F5F7}
+*{box-sizing:border-box}
+button,input,select{font-family:inherit}
+a{color:#1A5DD6}a:hover{color:#134BB3}
+</style>
+</head>
+<body>
+<div style="min-height: 100vh; background: #F5F5F7; color: #1D1D1F; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', 'Noto Sans TC', sans-serif; -webkit-font-smoothing: antialiased">
+
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(245,245,247,0.86); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid rgba(0,0,0,0.07)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; min-height: 60px; display: flex; align-items: center; gap: 36px; flex-wrap: wrap">
+<a href="index.html" aria-label="tixcraft 首頁" style="display: flex; align-items: baseline; gap: 8px; text-decoration: none"><span style="font-size: 22px; font-weight: 800; letter-spacing: -0.6px; color: #1A5DD6">tixcraft</span><span style="font-size: 11px; font-weight: 600; color: #6E6E73; letter-spacing: 0.5px">拓元售票</span></a>
+<nav aria-label="主要導覽" style="display: flex; gap: 28px; flex: 1; flex-wrap: wrap">
+<a href="search.html" style="font-size: 14px; font-weight: 600; color: #1D1D1F; text-decoration: none">節目</a>
+<a href="index.html" style="font-size: 14px; font-weight: 500; color: #424245; text-decoration: none">最新消息</a>
+<a href="#" style="font-size: 14px; font-weight: 500; color: #424245; text-decoration: none">常見問題</a>
+<a href="#" style="font-size: 14px; font-weight: 500; color: #424245; text-decoration: none">訂單查詢</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 8px">
+<button type="button" aria-label="語言與地區" style="height: 36px; padding: 0 12px; border: 1px solid #D2D2D7; border-radius: 999px; background: #FFFFFF; color: #1D1D1F; font-size: 13px; display: flex; align-items: center; gap: 6px; cursor: pointer"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>繁中 · TW</button>
+<a href="login.html" style="height: 36px; padding: 0 16px; border-radius: 999px; background: #1D1D1F; color: #FFFFFF; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px; text-decoration: none"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg>登入</a>
+</div>
+</div>
+</header>
+
+<div style="background: #FFFFFF; border-bottom: 1px solid #E8E8ED">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap">
+<div style="display: flex; align-items: center; gap: 14px">
+<div aria-hidden="true" style="position: relative; width: 48px; height: 60px; border-radius: 10px; background: #0B1230; overflow: hidden; flex: 0 0 auto"><div style="position: absolute; width: 34px; height: 34px; left: 7px; top: 6px; border-radius: 50%; background: #F5B65E"></div><div style="position: absolute; left: 5px; bottom: 5px; font-family: Anton, sans-serif; font-size: 11px; color: #FFFFFF; letter-spacing: 0.5px">LUMEN</div></div>
+<div>
+<div style="font-size: 16px; font-weight: 600">光年 LUMEN《回聲 ECHOES》臺北站</div>
+<div style="margin-top: 3px; font-size: 13px; color: #6E6E73">2026.12.12（六）19:30・臺北小巨蛋　<a href="event.html" style="text-decoration: none; font-weight: 500">更換場次</a></div>
+</div>
+</div>
+<ol aria-label="購票進度" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<li aria-current="step" style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #1D1D1F"><span style="width: 26px; height: 26px; border-radius: 50%; background: #1A5DD6; color: #FFFFFF; font-size: 13px; display: grid; place-items: center">1</span>選擇票區</li>
+<li aria-hidden="true" style="width: 28px; height: 2px; border-radius: 2px; background: #D2D2D7"></li>
+<li style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #6E6E73"><span style="width: 26px; height: 26px; border-radius: 50%; background: #E8E8ED; color: #6E6E73; font-size: 13px; display: grid; place-items: center">2</span>張數與驗證</li>
+<li aria-hidden="true" style="width: 28px; height: 2px; border-radius: 2px; background: #D2D2D7"></li>
+<li style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #6E6E73"><span style="width: 26px; height: 26px; border-radius: 50%; background: #E8E8ED; color: #6E6E73; font-size: 13px; display: grid; place-items: center">3</span>付款</li>
+<li aria-hidden="true" style="width: 28px; height: 2px; border-radius: 2px; background: #D2D2D7"></li>
+<li style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #6E6E73"><span style="width: 26px; height: 26px; border-radius: 50%; background: #E8E8ED; color: #6E6E73; font-size: 13px; display: grid; place-items: center">4</span>完成</li>
+</ol>
+</div>
+</div>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 28px 24px 48px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+
+<section aria-labelledby="map-title" style="flex: 999 1 600px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: 28px">
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<div>
+<h1 id="map-title" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.4px">選擇票區</h1>
+<p style="margin: 6px 0 0; font-size: 15px; color: #6E6E73">點座位圖或右側清單都可以選，顏色代表票價。</p>
+</div>
+<div style="display: flex; gap: 8px">
+<button type="button" aria-label="放大座位圖" style="width: 38px; height: 38px; border-radius: 50%; border: 1px solid #E5E5EA; background: #FFFFFF; color: #1D1D1F; display: grid; place-items: center; cursor: pointer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+<button type="button" aria-label="縮小座位圖" style="width: 38px; height: 38px; border-radius: 50%; border: 1px solid #E5E5EA; background: #FFFFFF; color: #1D1D1F; display: grid; place-items: center; cursor: pointer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></button>
+</div>
+</div>
+
+<ul aria-label="票價圖例" style="list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: #424245">
+<li style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #1A5DD6"></span>特區 6,800</li>
+<li style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #5B8DEF"></span>搖滾區 4,800</li>
+<li style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #A9C4F5"></span>看台區 3,800</li>
+<li style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #F0A33B"></span>上層看台 2,800</li>
+<li style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #F7D9A0"></span>上層後排 1,800</li>
+<li style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 4px; background: repeating-linear-gradient(45deg, #E8E8ED 0 3px, #C7C7CC 3px 5px)"></span>已售完</li>
+</ul>
+
+<div style="margin-top: 18px; border-radius: 22px; background: #F5F5F7; padding: 18px">
+<svg viewBox="0 0 640 450" role="img" aria-label="臺北小巨蛋座位圖，已選擇 S2 看台區" style="display: block; width: 100%; height: auto; font-family: -apple-system, 'PingFang TC', 'Noto Sans TC', sans-serif">
+<defs>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#E8E8ED"></rect><rect width="2.5" height="7" fill="#C7C7CC"></rect></pattern>
+</defs>
+<rect x="230" y="20" width="180" height="50" rx="14" fill="#1D1D1F"></rect>
+<text x="320" y="51" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="2">STAGE 舞台</text>
+
+<rect x="200" y="92" width="115" height="85" rx="12" fill="#1A5DD6"></rect>
+<text x="257" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">特 A</text>
+<rect x="325" y="92" width="115" height="85" rx="12" fill="#1A5DD6"></rect>
+<text x="382" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">特 B</text>
+<rect x="200" y="187" width="115" height="95" rx="12" fill="#5B8DEF"></rect>
+<text x="257" y="239" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">搖滾 C</text>
+<rect x="325" y="187" width="115" height="95" rx="12" fill="url(#hatch)"></rect>
+<text x="382" y="239" text-anchor="middle" font-size="14" font-weight="600" fill="#8E8E93">搖滾 D</text>
+
+<rect x="120" y="92" width="66" height="56" rx="10" fill="#A9C4F5"></rect>
+<text x="153" y="125" text-anchor="middle" font-size="13" font-weight="600" fill="#1D1D1F">L1</text>
+<rect x="120" y="158" width="66" height="56" rx="10" fill="#A9C4F5"></rect>
+<text x="153" y="191" text-anchor="middle" font-size="13" font-weight="600" fill="#1D1D1F">L2</text>
+<rect x="120" y="224" width="66" height="58" rx="10" fill="#A9C4F5"></rect>
+<text x="153" y="258" text-anchor="middle" font-size="13" font-weight="600" fill="#1D1D1F">L3</text>
+<rect x="454" y="92" width="66" height="56" rx="10" fill="#A9C4F5"></rect>
+<text x="487" y="125" text-anchor="middle" font-size="13" font-weight="600" fill="#1D1D1F">R1</text>
+<rect x="454" y="158" width="66" height="56" rx="10" fill="url(#hatch)"></rect>
+<text x="487" y="191" text-anchor="middle" font-size="13" font-weight="600" fill="#8E8E93">R2</text>
+<rect x="454" y="224" width="66" height="58" rx="10" fill="#A9C4F5"></rect>
+<text x="487" y="258" text-anchor="middle" font-size="13" font-weight="600" fill="#1D1D1F">R3</text>
+<rect x="120" y="294" width="66" height="50" rx="10" fill="#A9C4F5"></rect>
+<text x="153" y="324" text-anchor="middle" font-size="13" font-weight="600" fill="#1D1D1F">L4</text>
+<rect x="200" y="294" width="54" height="50" rx="10" fill="#A9C4F5"></rect>
+<text x="227" y="324" text-anchor="middle" font-size="13" font-weight="600" fill="#1D1D1F">S1</text>
+<rect x="262" y="294" width="54" height="50" rx="10" fill="#A9C4F5" stroke="#1D1D1F" stroke-width="3"></rect>
+<text x="289" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#1D1D1F">S2</text>
+<rect x="324" y="294" width="54" height="50" rx="10" fill="#A9C4F5"></rect>
+<text x="351" y="324" text-anchor="middle" font-size="13" font-weight="600" fill="#1D1D1F">S3</text>
+<rect x="386" y="294" width="54" height="50" rx="10" fill="#A9C4F5"></rect>
+<text x="413" y="324" text-anchor="middle" font-size="13" font-weight="600" fill="#1D1D1F">S4</text>
+<rect x="454" y="294" width="66" height="50" rx="10" fill="#A9C4F5"></rect>
+<text x="487" y="324" text-anchor="middle" font-size="13" font-weight="600" fill="#1D1D1F">R4</text>
+
+<rect x="40" y="92" width="66" height="78" rx="10" fill="#F0A33B"></rect>
+<text x="73" y="136" text-anchor="middle" font-size="12" font-weight="600" fill="#1D1D1F">UL1</text>
+<rect x="40" y="180" width="66" height="78" rx="10" fill="#F0A33B"></rect>
+<text x="73" y="224" text-anchor="middle" font-size="12" font-weight="600" fill="#1D1D1F">UL2</text>
+<rect x="40" y="268" width="66" height="76" rx="10" fill="#F0A33B"></rect>
+<text x="73" y="311" text-anchor="middle" font-size="12" font-weight="600" fill="#1D1D1F">UL3</text>
+<rect x="534" y="92" width="66" height="78" rx="10" fill="#F0A33B"></rect>
+<text x="567" y="136" text-anchor="middle" font-size="12" font-weight="600" fill="#1D1D1F">UR1</text>
+<rect x="534" y="180" width="66" height="78" rx="10" fill="#F0A33B"></rect>
+<text x="567" y="224" text-anchor="middle" font-size="12" font-weight="600" fill="#1D1D1F">UR2</text>
+<rect x="534" y="268" width="66" height="76" rx="10" fill="url(#hatch)"></rect>
+<text x="567" y="311" text-anchor="middle" font-size="12" font-weight="600" fill="#8E8E93">UR3</text>
+
+<rect x="40" y="358" width="85" height="54" rx="10" fill="#F7D9A0"></rect>
+<text x="82" y="390" text-anchor="middle" font-size="12" font-weight="600" fill="#1D1D1F">U1</text>
+<rect x="135" y="358" width="85" height="54" rx="10" fill="#F7D9A0"></rect>
+<text x="177" y="390" text-anchor="middle" font-size="12" font-weight="600" fill="#1D1D1F">U2</text>
+<rect x="230" y="358" width="85" height="54" rx="10" fill="url(#hatch)"></rect>
+<text x="272" y="390" text-anchor="middle" font-size="12" font-weight="600" fill="#8E8E93">U3</text>
+<rect x="325" y="358" width="85" height="54" rx="10" fill="#F7D9A0"></rect>
+<text x="367" y="390" text-anchor="middle" font-size="12" font-weight="600" fill="#1D1D1F">U4</text>
+<rect x="420" y="358" width="85" height="54" rx="10" fill="#F7D9A0"></rect>
+<text x="462" y="390" text-anchor="middle" font-size="12" font-weight="600" fill="#1D1D1F">U5</text>
+<rect x="515" y="358" width="85" height="54" rx="10" fill="#F7D9A0"></rect>
+<text x="557" y="390" text-anchor="middle" font-size="12" font-weight="600" fill="#1D1D1F">U6</text>
+
+<text x="320" y="438" text-anchor="middle" font-size="11" fill="#6E6E73" letter-spacing="1">主要入口 ・ GATE 1</text>
+
+<g>
+<circle cx="289" cy="276" r="13" fill="#1A5DD6" stroke="#FFFFFF" stroke-width="3"></circle>
+<path d="M283.5 276.5l3.5 3.5 7-7" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</svg>
+</div>
+</section>
+
+<aside aria-labelledby="list-title" style="flex: 1 1 360px; background: #FFFFFF; border-radius: 28px; padding: 24px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<h2 id="list-title" style="margin: 0; font-size: 20px; font-weight: 700">票區清單</h2>
+<label style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #424245; cursor: pointer">只看有票
+<span aria-hidden="true" style="width: 40px; height: 24px; border-radius: 999px; background: #34C759; position: relative; display: inline-block"><span style="position: absolute; top: 2px; right: 2px; width: 20px; height: 20px; border-radius: 50%; background: #FFFFFF; box-shadow: 0 1px 3px rgba(0,0,0,0.2)"></span></span>
+<input type="checkbox" checked style="position: absolute; opacity: 0; width: 1px; height: 1px">
+</label>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 18px">
+
+<div>
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px"><span style="width: 12px; height: 12px; border-radius: 4px; background: #1A5DD6"></span><span style="font-size: 15px; font-weight: 600; flex: 1">特區</span><span style="font-size: 15px; font-weight: 700">NT$6,800</span></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px">
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">特 A</span><span style="font-size: 11px; font-weight: 600; color: #B25000">剩 12 席</span></button>
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">特 B</span><span style="font-size: 11px; font-weight: 600; color: #B25000">剩 8 席</span></button>
+</div>
+</div>
+
+<div>
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px"><span style="width: 12px; height: 12px; border-radius: 4px; background: #5B8DEF"></span><span style="font-size: 15px; font-weight: 600; flex: 1">搖滾區</span><span style="font-size: 15px; font-weight: 700">NT$4,800</span></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px">
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">搖滾 C</span><span style="font-size: 11px; font-weight: 600; color: #1A7F37">有票</span></button>
+<button type="button" disabled style="height: 56px; border-radius: 14px; border: none; background: #F5F5F7; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px"><span style="font-size: 14px; font-weight: 600; color: #8E8E93; text-decoration: line-through">搖滾 D</span><span style="font-size: 11px; color: #6E6E73">已售完</span></button>
+</div>
+</div>
+
+<div>
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px"><span style="width: 12px; height: 12px; border-radius: 4px; background: #A9C4F5"></span><span style="font-size: 15px; font-weight: 600; flex: 1">看台區</span><span style="font-size: 15px; font-weight: 700">NT$3,800</span></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px">
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">S1</span><span style="font-size: 11px; font-weight: 600; color: #1A7F37">有票</span></button>
+<button type="button" aria-pressed="true" style="height: 56px; border-radius: 14px; border: none; background: #1A5DD6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer; box-shadow: 0 6px 16px rgba(26,93,214,0.3)"><span style="font-size: 14px; font-weight: 700; color: #FFFFFF">S2</span><span style="font-size: 11px; font-weight: 600; color: #FFFFFF">已選擇</span></button>
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">S3</span><span style="font-size: 11px; font-weight: 600; color: #1A7F37">有票</span></button>
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">S4</span><span style="font-size: 11px; font-weight: 600; color: #1A7F37">有票</span></button>
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">L1–L4</span><span style="font-size: 11px; font-weight: 600; color: #1A7F37">有票</span></button>
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">R1・R3・R4</span><span style="font-size: 11px; font-weight: 600; color: #1A7F37">有票</span></button>
+</div>
+</div>
+
+<div>
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px"><span style="width: 12px; height: 12px; border-radius: 4px; background: #F0A33B"></span><span style="font-size: 15px; font-weight: 600; flex: 1">上層看台</span><span style="font-size: 15px; font-weight: 700">NT$2,800</span></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px">
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">UL1–UL3</span><span style="font-size: 11px; font-weight: 600; color: #1A7F37">有票</span></button>
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">UR1・UR2</span><span style="font-size: 11px; font-weight: 600; color: #1A7F37">有票</span></button>
+</div>
+</div>
+
+<div>
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px"><span style="width: 12px; height: 12px; border-radius: 4px; background: #F7D9A0"></span><span style="font-size: 15px; font-weight: 600; flex: 1">上層後排</span><span style="font-size: 15px; font-weight: 700">NT$1,800</span></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px">
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">U1・U2</span><span style="font-size: 11px; font-weight: 600; color: #1A7F37">有票</span></button>
+<button type="button" style="height: 56px; border-radius: 14px; border: 1px solid #E5E5EA; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer"><span style="font-size: 14px; font-weight: 600; color: #1D1D1F">U4–U6</span><span style="font-size: 11px; font-weight: 600; color: #1A7F37">有票</span></button>
+</div>
+</div>
+
+</div>
+
+<div style="margin-top: 4px; padding-top: 18px; border-top: 1px solid #F0F0F3; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px">
+<span style="font-size: 14px; color: #6E6E73">已選票區</span>
+<span style="font-size: 17px; font-weight: 700">S2 看台區・NT$3,800</span>
+</div>
+<a href="quantity.html" style="height: 52px; border-radius: 999px; background: #1A5DD6; color: #FFFFFF; font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none">下一步：選擇張數<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a>
+</div>
+</aside>
+
+</main>
+</div>
+</body>
+</html>

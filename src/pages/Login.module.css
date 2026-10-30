@@ -1,0 +1,247 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.backdropPage {
+  pointer-events: none;
+  user-select: none;
+}
+
+.skeleton {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 28px var(--gutter);
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.skeletonMain {
+  flex: 999 1 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skTimer {
+  height: 64px;
+  border-radius: 20px;
+  background: var(--blue-soft);
+}
+
+.skCard {
+  border-radius: 28px;
+  background: var(--card);
+}
+
+/* ===== 彈出視窗 ===== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(29, 29, 31, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 88px var(--gutter) 40px;
+  overflow-y: auto;
+  animation: fade 0.2s ease both;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.dialog {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  background: var(--card);
+  border-radius: 30px;
+  padding: 36px 36px 28px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: rise 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: var(--line-soft);
+  color: var(--text-2);
+  display: grid;
+  place-items: center;
+}
+
+.close:hover {
+  background: var(--fill);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.lockIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--blue-soft);
+  color: var(--blue);
+  display: grid;
+  place-items: center;
+}
+
+.h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.lead {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-3);
+}
+
+.timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--blue-soft);
+  color: var(--blue-deep);
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.benefits {
+  list-style: none;
+  margin: 0;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-2);
+}
+
+.benefits li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.fieldRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.input {
+  height: 50px;
+  padding: 0 16px;
+  border-radius: 14px;
+  border: 1px solid var(--line-strong);
+  background: var(--card);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text);
+  outline: none;
+}
+
+.input:focus {
+  border: 2px solid var(--blue);
+  padding: 0 15px;
+  box-shadow: 0 0 0 4px rgba(26, 93, 214, 0.12);
+}
+
+.submit {
+  margin-top: 4px;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.or span {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.google {
+  height: 50px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--card);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.google:hover {
+  background: var(--bg);
+}
+
+.signup {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-3);
+}
+
+.signup a {
+  font-weight: 600;
+}

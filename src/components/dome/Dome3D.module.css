@@ -1,0 +1,12 @@
+.wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #07080c;
+}
+
+.preview {
+  aspect-ratio: 640 / 380;
+}

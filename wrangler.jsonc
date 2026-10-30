@@ -1,0 +1,10 @@
+// Cloudflare Workers 靜態網站部署設定：建置指令 npm run build，輸出到 dist/
+// 單頁應用（React Router）：找不到的路徑一律回傳 index.html，讓 /zone、/payment 等網址重新整理也能開
+{
+  "name": "tixcraft-redesign",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}

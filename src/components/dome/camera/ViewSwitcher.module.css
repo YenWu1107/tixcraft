@@ -1,0 +1,197 @@
+/* 疊在畫布上的一層，本身不擋點擊；寬度給 container query 用 */
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  container-type: inline-size;
+  z-index: 40; /* 在 drei <Html> 標籤之上 */
+  font-family: inherit;
+}
+
+/* ---------- 底部視角切換 ---------- */
+.dock {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14px;
+  display: flex;
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.group {
+  position: relative;
+  display: flex;
+  gap: 2px;
+  max-width: 100%;
+  padding: 3px;
+  border-radius: 999px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  pointer-events: auto;
+  background: rgba(20, 22, 28, 0.55);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+    0 10px 30px rgba(0, 0, 0, 0.35);
+}
+.group::-webkit-scrollbar {
+  display: none;
+}
+
+/* 目前選取的亮色底塊（滑動） */
+.thumb {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.14));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 0 16px rgba(170, 200, 255, 0.28),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.32s cubic-bezier(0.3, 0.7, 0.2, 1),
+    width 0.32s cubic-bezier(0.3, 0.7, 0.2, 1);
+  pointer-events: none;
+}
+
+.seg {
+  position: relative;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.72);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.seg:hover:not([aria-disabled='true']):not(.active) {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.07);
+}
+.active {
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(200, 220, 255, 0.45);
+}
+.seg[aria-disabled='true'] {
+  color: rgba(255, 255, 255, 0.32);
+  cursor: not-allowed;
+}
+.seg:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px rgba(20, 22, 28, 0.9),
+    0 0 0 4px #8fb4ff;
+}
+
+/* 「我的視野」前面一條細分隔線 */
+.seatSeg::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 9px;
+  bottom: 9px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.16);
+}
+.seatSeg.active::before {
+  display: none;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.9;
+}
+
+/* 窄畫布：拿掉圖示、縮小留白（約 560px 寬也能一行放下） */
+@container (max-width: 640px) {
+  .seg .icon {
+    display: none;
+  }
+  .seg {
+    padding: 0 12px;
+  }
+}
+@container (max-width: 440px) {
+  .seg {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}
+
+/* ---------- 左上角：我的視野說明 ---------- */
+.caption {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 30px;
+  padding: 0 12px 0 10px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: rgba(20, 22, 28, 0.55);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.3);
+  animation: captionIn 0.4s 0.5s both cubic-bezier(0.3, 0.7, 0.2, 1);
+}
+.caption b {
+  color: #fff;
+  font-weight: 600;
+}
+.caption .icon {
+  color: #a9c4ff;
+}
+
+@keyframes captionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thumb,
+  .seg {
+    transition: none;
+  }
+  .caption {
+    animation: none;
+  }
+}

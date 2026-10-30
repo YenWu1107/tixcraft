@@ -1,0 +1,548 @@
+/* ===== 主視覺 ===== */
+.hero {
+  position: relative;
+  height: 540px;
+  background: #070a14;
+  overflow: hidden;
+  color: #fff;
+}
+
+.heroArt {
+  position: absolute;
+  inset: 0;
+}
+
+.heroImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.shadeLeft {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(7, 10, 20, 1) 0%, rgba(7, 10, 20, 0.94) 22%, rgba(7, 10, 20, 0.7) 40%, rgba(7, 10, 20, 0) 70%);
+}
+
+.shadeBottom {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 10, 20, 0) 55%, rgba(7, 10, 20, 0.8) 100%);
+}
+
+.heroContent {
+  position: relative;
+  max-width: var(--max-w);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 var(--gutter) 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.crumbs {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  gap: 6px;
+}
+
+.crumbs a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.crumbs a:hover {
+  color: #fff;
+}
+
+.crumbCurrent {
+  color: #fff;
+}
+
+.liveBadge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(52, 199, 89, 0.18);
+  border: 1px solid rgba(52, 199, 89, 0.5);
+  color: #7ee2a0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: 96px;
+  line-height: 0.95;
+  letter-spacing: 5px;
+}
+
+.heroH1 {
+  margin: 10px 0 0;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.heroMeta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.heroCta {
+  min-width: 200px;
+  height: 50px;
+}
+
+.glassBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(12px);
+}
+
+.glassBtn:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+/* ===== 內容 ===== */
+.main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 32px var(--gutter) 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 999 1 560px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tabs {
+  align-self: flex-start;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--fill);
+  flex-wrap: wrap;
+}
+
+.tab {
+  height: 36px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-2);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tabActive {
+  background: var(--card);
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.panel {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.panelTitle {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  scroll-margin-top: 96px;
+}
+
+.panelDesc {
+  margin: 0 0 18px;
+  font-size: 14px;
+  color: var(--text-3);
+}
+
+/* 場次 */
+.sessions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.session {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  flex-wrap: wrap;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.sessionClickable {
+  cursor: pointer;
+}
+
+.sessionClickable:hover {
+  border-color: var(--tier-3);
+}
+
+.sessionSelected,
+.sessionSelected:hover {
+  /* 用 outline 模擬 2px 邊框，避免選取時版面跳動 */
+  border-color: var(--blue);
+  box-shadow: inset 0 0 0 1px var(--blue);
+  background: var(--blue-tint);
+}
+
+.dateBlock {
+  width: 64px;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.month {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.day {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.weekday {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.sessionInfo {
+  flex: 1 1 220px;
+}
+
+.sessionTime {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.sessionDesc {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--text-3);
+}
+
+.extraTag {
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--blue-soft);
+  color: var(--blue-deep);
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: 2px;
+}
+
+.chooseBtn,
+.chooseBtnPrimary {
+  height: 40px;
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 1px solid var(--blue);
+  background: var(--card);
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.chooseBtn:hover {
+  background: var(--blue-tint);
+}
+
+.chooseBtnPrimary {
+  background: var(--blue);
+  color: #fff;
+}
+
+.chooseBtnPrimary:hover {
+  background: var(--blue-hover);
+}
+
+.remindBtn {
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: var(--bg);
+  border: none;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.remindBtn:hover {
+  background: var(--fill);
+}
+
+.remindBtn[aria-pressed='true'] {
+  background: var(--blue-soft);
+  color: var(--blue-deep);
+}
+
+/* 購票 4 步 */
+.flow {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.flowItem {
+  padding: 18px;
+  border-radius: 18px;
+  background: var(--bg);
+}
+
+.flowNum {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+.flowTitle {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.flowDesc {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--text-3);
+  line-height: 1.5;
+}
+
+/* 節目介紹 */
+.about {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-2);
+}
+
+.facts {
+  margin: 22px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.fact {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: var(--bg);
+}
+
+.fact dt {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.fact dd {
+  margin: 4px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ===== 右側購票資訊 ===== */
+.aside {
+  flex: 1 1 340px;
+  position: sticky;
+  top: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buyCard {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.priceLabel {
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.priceRange {
+  margin-top: 4px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.tiers {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tier {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 14px;
+}
+
+.tier:last-child {
+  border-bottom: none;
+}
+
+.tierName {
+  flex: 1;
+}
+
+.tierAvail {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tierPrice {
+  width: 70px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.selected {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.selectedText {
+  flex: 1;
+}
+
+.selectedText strong {
+  font-weight: 600;
+}
+
+.selected a {
+  font-size: 13px;
+}
+
+.buyBtn {
+  margin-top: 14px;
+}
+
+.loginTip {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--blue-soft);
+  color: var(--blue-ink);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.loginTip strong {
+  font-weight: 600;
+}
+
+.loginTip a {
+  font-weight: 600;
+}
+
+.venueCard {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 20px 24px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.venueIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+.venueName {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.venueAddr {
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--text-3);
+  line-height: 1.5;
+}
+
+.mapLink {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}

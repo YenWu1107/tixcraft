@@ -1,0 +1,1097 @@
+[
+  {
+    "slug": "lumen",
+    "en": "LUMEN",
+    "sub": "Echoes World Tour 2026",
+    "title": "光年 LUMEN《回聲 ECHOES》2026 世界巡迴 臺北站",
+    "short_title": "LUMEN 臺北站",
+    "date_text": "2026.12.12（六）– 12.13（日）",
+    "starts_at": "2026-12-12",
+    "venue": "臺北大巨蛋",
+    "region": "臺北",
+    "category": "演唱會",
+    "price": 1800,
+    "status": "hot",
+    "note": "共 2 場",
+    "sale_at_text": "",
+    "sale_date": null,
+    "art": {
+      "bg": "#0B1230",
+      "c1": "#F5B65E",
+      "c2": "rgba(255,255,255,0.35)",
+      "fg": "#FFFFFF",
+      "orb": "64%",
+      "ox": "18%",
+      "oy": "8%",
+      "ring": "96%",
+      "rx": "2%",
+      "ry": "-6%"
+    },
+    "home_section": "hot",
+    "sort_order": 0,
+    "banner_image": "/images/banner-lumen.webp",
+    "about": "睽違三年，光年 LUMEN 帶著全新專輯《回聲》首度登上臺北大巨蛋。巨型環形主舞台搭配沉浸式燈光設計，帶來兩小時半的完整巡演曲目，以及專為臺北站準備的特別企劃。",
+    "address": "臺北市信義區忠孝東路四段 515 號\n捷運國父紀念館站 5 號出口，地下通道直達",
+    "organizer": "光年音樂娛樂",
+    "hero_enabled": true,
+    "hero_order": 0,
+    "hero_tag": "全台首站・熱賣中",
+    "hero_watermark": "ECHOES",
+    "hero_date_text": "2026.12.12 – 12.13",
+    "hero_image": "/images/hero-lumen.webp",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-12-12",
+        "time": "19:30",
+        "status": "hot",
+        "desc": "18:00 開放入場・演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "18:00",
+        "qr_open": "12.11（五）19:30"
+      },
+      {
+        "date": "2026-12-13",
+        "time": "18:00",
+        "status": "few",
+        "desc": "16:30 開放入場・演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "16:30",
+        "qr_open": "12.12（六）18:00"
+      },
+      {
+        "date": "2026-12-14",
+        "time": "19:30",
+        "status": "soon",
+        "desc": "10.25（日）12:00 開賣",
+        "is_extra": true,
+        "doors": "18:00",
+        "qr_open": "12.13（日）19:30"
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 6800
+      },
+      {
+        "key": "rock",
+        "price": 4800
+      },
+      {
+        "key": "stand",
+        "price": 3800
+      },
+      {
+        "key": "upper",
+        "price": 2800
+      },
+      {
+        "key": "back",
+        "price": 1800
+      }
+    ]
+  },
+  {
+    "slug": "city-of-mist",
+    "en": "CITY OF MIST",
+    "sub": "An Original Musical",
+    "title": "原創音樂劇《霧之城》",
+    "short_title": "",
+    "date_text": "2026.12.04（五）– 12.06（日）",
+    "starts_at": "2026-12-04",
+    "venue": "臺中國家歌劇院 大劇院",
+    "region": "臺中",
+    "category": "音樂劇",
+    "price": 800,
+    "status": "hot",
+    "note": "共 4 場",
+    "sale_at_text": "",
+    "sale_date": null,
+    "art": {
+      "bg": "#1E2623",
+      "c1": "#B8C4BB",
+      "c2": "rgba(255,255,255,0.3)",
+      "fg": "#F2F5F2",
+      "orb": "58%",
+      "ox": "36%",
+      "oy": "6%",
+      "ring": "78%",
+      "rx": "-12%",
+      "ry": "14%"
+    },
+    "home_section": "hot",
+    "sort_order": 1,
+    "banner_image": "/images/hero-city-of-mist.webp",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": true,
+    "hero_order": 1,
+    "hero_tag": "原創音樂劇・熱賣中",
+    "hero_watermark": "MIST",
+    "hero_date_text": "2026.12.04 – 12.06",
+    "hero_image": "/images/hero-city-of-mist.webp",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-12-04",
+        "time": "19:30",
+        "status": "hot",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      },
+      {
+        "date": "2026-12-05",
+        "time": "14:30",
+        "status": "hot",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      },
+      {
+        "date": "2026-12-05",
+        "time": "19:30",
+        "status": "hot",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      },
+      {
+        "date": "2026-12-06",
+        "time": "14:30",
+        "status": "few",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 3000
+      },
+      {
+        "key": "rock",
+        "price": 2100
+      },
+      {
+        "key": "stand",
+        "price": 1700
+      },
+      {
+        "key": "upper",
+        "price": 1200
+      },
+      {
+        "key": "back",
+        "price": 800
+      }
+    ]
+  },
+  {
+    "slug": "tide-line",
+    "en": "TIDE LINE",
+    "sub": "Live Tour 2026 · Taichung",
+    "title": "海岸線樂團《潮間帶》巡迴演唱會",
+    "short_title": "",
+    "date_text": "2026.11.21（六）",
+    "starts_at": "2026-11-21",
+    "venue": "Legacy TAICHUNG",
+    "region": "臺中",
+    "category": "演唱會",
+    "price": 1200,
+    "status": "few",
+    "note": "僅剩少量座位",
+    "sale_at_text": "",
+    "sale_date": null,
+    "art": {
+      "bg": "#DCEBF0",
+      "c1": "#1E6F8C",
+      "c2": "rgba(30,111,140,0.45)",
+      "fg": "#0B2E3A",
+      "orb": "70%",
+      "ox": "-14%",
+      "oy": "-10%",
+      "ring": "70%",
+      "rx": "40%",
+      "ry": "12%"
+    },
+    "home_section": "hot",
+    "sort_order": 2,
+    "banner_image": "",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": false,
+    "hero_order": 0,
+    "hero_tag": "",
+    "hero_watermark": "",
+    "hero_date_text": "",
+    "hero_image": "",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-11-21",
+        "time": "19:30",
+        "status": "few",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 4500
+      },
+      {
+        "key": "rock",
+        "price": 3200
+      },
+      {
+        "key": "stand",
+        "price": 2500
+      },
+      {
+        "key": "upper",
+        "price": 1900
+      },
+      {
+        "key": "back",
+        "price": 1200
+      }
+    ]
+  },
+  {
+    "slug": "refund-if-not-funny",
+    "en": "REFUND IF NOT FUNNY",
+    "sub": "Stand-up Comedy Tour",
+    "title": "脫口秀《不好笑退費》巡迴終場",
+    "short_title": "",
+    "date_text": "2026.11.14（六）",
+    "starts_at": "2026-11-14",
+    "venue": "臺北流行音樂中心",
+    "region": "臺北",
+    "category": "脫口秀",
+    "price": 1500,
+    "status": "hot",
+    "note": "共 1 場",
+    "sale_at_text": "",
+    "sale_date": null,
+    "art": {
+      "bg": "#FFD43B",
+      "c1": "#1D1D1F",
+      "c2": "rgba(29,29,31,0.5)",
+      "fg": "#1D1D1F",
+      "orb": "42%",
+      "ox": "52%",
+      "oy": "7%",
+      "ring": "64%",
+      "rx": "6%",
+      "ry": "2%"
+    },
+    "home_section": "hot",
+    "sort_order": 3,
+    "banner_image": "",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": false,
+    "hero_order": 0,
+    "hero_tag": "",
+    "hero_watermark": "",
+    "hero_date_text": "",
+    "hero_image": "",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-11-14",
+        "time": "19:30",
+        "status": "hot",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 5700
+      },
+      {
+        "key": "rock",
+        "price": 4000
+      },
+      {
+        "key": "stand",
+        "price": 3200
+      },
+      {
+        "key": "upper",
+        "price": 2300
+      },
+      {
+        "key": "back",
+        "price": 1500
+      }
+    ]
+  },
+  {
+    "slug": "nova-kim",
+    "en": "NOVA KIM",
+    "sub": "Midnight Bloom Asia Tour",
+    "title": "NOVA KIM〈Midnight Bloom〉亞洲巡迴 新北站",
+    "short_title": "",
+    "date_text": "2026.11.28（六）",
+    "starts_at": "2026-11-28",
+    "venue": "Zepp New Taipei",
+    "region": "新北",
+    "category": "演唱會",
+    "price": 2800,
+    "status": "soon",
+    "note": "10.24 12:00 開賣",
+    "sale_at_text": "10.24（六）12:00",
+    "sale_date": "2026-10-24",
+    "art": {
+      "bg": "#2A0F2E",
+      "c1": "#E85D8A",
+      "c2": "rgba(255,214,231,0.5)",
+      "fg": "#FFE9F1",
+      "orb": "72%",
+      "ox": "14%",
+      "oy": "4%",
+      "ring": "50%",
+      "rx": "58%",
+      "ry": "-6%"
+    },
+    "home_section": "soon",
+    "sort_order": 4,
+    "banner_image": "/images/hero-nova-kim.webp",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": true,
+    "hero_order": 2,
+    "hero_tag": "亞洲巡迴新北站・即將開賣",
+    "hero_watermark": "BLOOM",
+    "hero_date_text": "2026.11.28",
+    "hero_image": "/images/hero-nova-kim.webp",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-11-28",
+        "time": "19:30",
+        "status": "soon",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 10600
+      },
+      {
+        "key": "rock",
+        "price": 7500
+      },
+      {
+        "key": "stand",
+        "price": 5900
+      },
+      {
+        "key": "upper",
+        "price": 4400
+      },
+      {
+        "key": "back",
+        "price": 2800
+      }
+    ]
+  },
+  {
+    "slug": "new-year-voices",
+    "en": "NEW YEAR VOICES",
+    "sub": "Gala Concert 2027",
+    "title": "城市交響《新年之聲》2027 新年音樂會",
+    "short_title": "",
+    "date_text": "2027.01.01（五）",
+    "starts_at": "2027-01-01",
+    "venue": "國家音樂廳",
+    "region": "臺北",
+    "category": "古典與爵士",
+    "price": 600,
+    "status": "soon",
+    "note": "10.30 12:00 開賣",
+    "sale_at_text": "10.30（五）12:00",
+    "sale_date": "2026-10-30",
+    "art": {
+      "bg": "#F3E9D7",
+      "c1": "#B23A2E",
+      "c2": "rgba(178,58,46,0.45)",
+      "fg": "#3A1712",
+      "orb": "46%",
+      "ox": "27%",
+      "oy": "10%",
+      "ring": "76%",
+      "rx": "12%",
+      "ry": "-4%"
+    },
+    "home_section": "soon",
+    "sort_order": 5,
+    "banner_image": "",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": false,
+    "hero_order": 0,
+    "hero_tag": "",
+    "hero_watermark": "",
+    "hero_date_text": "",
+    "hero_image": "",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2027-01-01",
+        "time": "19:30",
+        "status": "soon",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 2300
+      },
+      {
+        "key": "rock",
+        "price": 1600
+      },
+      {
+        "key": "stand",
+        "price": 1300
+      },
+      {
+        "key": "upper",
+        "price": 900
+      },
+      {
+        "key": "back",
+        "price": 600
+      }
+    ]
+  },
+  {
+    "slug": "pulse",
+    "en": "PULSE",
+    "sub": "Electronic Music Festival",
+    "title": "PULSE 電子音樂節 2026",
+    "short_title": "",
+    "date_text": "2026.12.19（六）– 12.20（日）",
+    "starts_at": "2026-12-19",
+    "venue": "高雄流行音樂中心",
+    "region": "高雄",
+    "category": "音樂節",
+    "price": 2200,
+    "status": "soon",
+    "note": "11.07 12:00 開賣",
+    "sale_at_text": "11.07（六）12:00",
+    "sale_date": "2026-11-07",
+    "art": {
+      "bg": "#0A0A0A",
+      "c1": "#3DF2C4",
+      "c2": "rgba(61,242,196,0.5)",
+      "fg": "#FFFFFF",
+      "orb": "36%",
+      "ox": "32%",
+      "oy": "18%",
+      "ring": "86%",
+      "rx": "7%",
+      "ry": "-1%"
+    },
+    "home_section": "soon",
+    "sort_order": 6,
+    "banner_image": "/images/hero-pulse.webp",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": true,
+    "hero_order": 3,
+    "hero_tag": "電子音樂節・即將開賣",
+    "hero_watermark": "PULSE",
+    "hero_date_text": "2026.12.19 – 12.20",
+    "hero_image": "/images/hero-pulse.webp",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-12-19",
+        "time": "19:30",
+        "status": "soon",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 8300
+      },
+      {
+        "key": "rock",
+        "price": 5900
+      },
+      {
+        "key": "stand",
+        "price": 4600
+      },
+      {
+        "key": "upper",
+        "price": 3400
+      },
+      {
+        "key": "back",
+        "price": 2200
+      }
+    ]
+  },
+  {
+    "slug": "nightwalker",
+    "en": "NIGHTWALKER",
+    "sub": "15th Anniversary Live",
+    "title": "夜行者 NIGHTWALKER 15 週年演唱會",
+    "short_title": "",
+    "date_text": "2027.01.16（六）",
+    "starts_at": "2027-01-16",
+    "venue": "高雄巨蛋",
+    "region": "高雄",
+    "category": "演唱會",
+    "price": 1880,
+    "status": "soon",
+    "note": "11.14 12:00 開賣",
+    "sale_at_text": "11.14（六）12:00",
+    "sale_date": "2026-11-14",
+    "art": {
+      "bg": "#3B1D10",
+      "c1": "#FF7A3D",
+      "c2": "rgba(255,200,170,0.45)",
+      "fg": "#FFF3EC",
+      "orb": "82%",
+      "ox": "30%",
+      "oy": "-14%",
+      "ring": "60%",
+      "rx": "-10%",
+      "ry": "24%"
+    },
+    "home_section": "soon",
+    "sort_order": 7,
+    "banner_image": "/images/hero-nightwalker.webp",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": true,
+    "hero_order": 4,
+    "hero_tag": "15 週年紀念・即將開賣",
+    "hero_watermark": "15TH",
+    "hero_date_text": "2027.01.16",
+    "hero_image": "/images/hero-nightwalker.webp",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2027-01-16",
+        "time": "19:30",
+        "status": "soon",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 7100
+      },
+      {
+        "key": "rock",
+        "price": 5000
+      },
+      {
+        "key": "stand",
+        "price": 4000
+      },
+      {
+        "key": "upper",
+        "price": 2900
+      },
+      {
+        "key": "back",
+        "price": 1900
+      }
+    ]
+  },
+  {
+    "slug": "railway",
+    "en": "RAILWAY",
+    "sub": "First Headline Show",
+    "title": "鐵道樂團 RAILWAY 首場售票演唱會",
+    "short_title": "",
+    "date_text": "2026.11.22（日）",
+    "starts_at": "2026-11-22",
+    "venue": "Legacy TAIPEI",
+    "region": "臺北",
+    "category": "演唱會",
+    "price": 1400,
+    "status": "few",
+    "note": "僅剩少量座位",
+    "sale_at_text": "",
+    "sale_date": null,
+    "art": {
+      "bg": "#E9E4DA",
+      "c1": "#2F4858",
+      "c2": "rgba(47,72,88,0.45)",
+      "fg": "#1D1D1F",
+      "orb": "56%",
+      "ox": "40%",
+      "oy": "-6%",
+      "ring": "72%",
+      "rx": "-14%",
+      "ry": "10%"
+    },
+    "home_section": "",
+    "sort_order": 8,
+    "banner_image": "",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": false,
+    "hero_order": 0,
+    "hero_tag": "",
+    "hero_watermark": "",
+    "hero_date_text": "",
+    "hero_image": "",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-11-22",
+        "time": "19:30",
+        "status": "few",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 5300
+      },
+      {
+        "key": "rock",
+        "price": 3700
+      },
+      {
+        "key": "stand",
+        "price": 3000
+      },
+      {
+        "key": "upper",
+        "price": 2200
+      },
+      {
+        "key": "back",
+        "price": 1400
+      }
+    ]
+  },
+  {
+    "slug": "back-to-1999",
+    "en": "BACK TO 1999",
+    "sub": "Greatest Hits Live",
+    "title": "回到 1999 經典金曲演唱會",
+    "short_title": "",
+    "date_text": "2026.11.29（日）",
+    "starts_at": "2026-11-29",
+    "venue": "臺北小巨蛋",
+    "region": "臺北",
+    "category": "演唱會",
+    "price": 1600,
+    "status": "hot",
+    "note": "共 1 場",
+    "sale_at_text": "",
+    "sale_date": null,
+    "art": {
+      "bg": "#0F3D3A",
+      "c1": "#F2D06B",
+      "c2": "rgba(255,255,255,0.32)",
+      "fg": "#FFFFFF",
+      "orb": "48%",
+      "ox": "8%",
+      "oy": "10%",
+      "ring": "80%",
+      "rx": "30%",
+      "ry": "-10%"
+    },
+    "home_section": "",
+    "sort_order": 9,
+    "banner_image": "",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": false,
+    "hero_order": 0,
+    "hero_tag": "",
+    "hero_watermark": "",
+    "hero_date_text": "",
+    "hero_image": "",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-11-29",
+        "time": "19:30",
+        "status": "hot",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 6000
+      },
+      {
+        "key": "rock",
+        "price": 4300
+      },
+      {
+        "key": "stand",
+        "price": 3400
+      },
+      {
+        "key": "upper",
+        "price": 2500
+      },
+      {
+        "key": "back",
+        "price": 1600
+      }
+    ]
+  },
+  {
+    "slug": "citylights",
+    "en": "CITYLIGHTS",
+    "sub": "Riverside Open Air",
+    "title": "城市之光 CITYLIGHTS 戶外演唱會",
+    "short_title": "",
+    "date_text": "2026.12.05（六）",
+    "starts_at": "2026-12-05",
+    "venue": "大佳河濱公園",
+    "region": "臺北",
+    "category": "演唱會",
+    "price": 990,
+    "status": "hot",
+    "note": "共 1 場",
+    "sale_at_text": "",
+    "sale_date": null,
+    "art": {
+      "bg": "#C8442A",
+      "c1": "#FFC9B8",
+      "c2": "rgba(255,255,255,0.45)",
+      "fg": "#FFFFFF",
+      "orb": "62%",
+      "ox": "-8%",
+      "oy": "-4%",
+      "ring": "62%",
+      "rx": "44%",
+      "ry": "10%"
+    },
+    "home_section": "",
+    "sort_order": 10,
+    "banner_image": "",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": false,
+    "hero_order": 0,
+    "hero_tag": "",
+    "hero_watermark": "",
+    "hero_date_text": "",
+    "hero_image": "",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-12-05",
+        "time": "19:30",
+        "status": "hot",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 3700
+      },
+      {
+        "key": "rock",
+        "price": 2600
+      },
+      {
+        "key": "stand",
+        "price": 2100
+      },
+      {
+        "key": "upper",
+        "price": 1500
+      },
+      {
+        "key": "back",
+        "price": 1000
+      }
+    ]
+  },
+  {
+    "slug": "moonpoet",
+    "en": "MOONPOET",
+    "sub": "Piano & Voice Recital",
+    "title": "月光詩人 MOONPOET 鋼琴自彈自唱會",
+    "short_title": "",
+    "date_text": "2026.12.18（五）",
+    "starts_at": "2026-12-18",
+    "venue": "臺北國際會議中心",
+    "region": "臺北",
+    "category": "演唱會",
+    "price": 1200,
+    "status": "hot",
+    "note": "共 1 場",
+    "sale_at_text": "",
+    "sale_date": null,
+    "art": {
+      "bg": "#E8E6F5",
+      "c1": "#5C4FC9",
+      "c2": "rgba(92,79,201,0.4)",
+      "fg": "#221C55",
+      "orb": "40%",
+      "ox": "48%",
+      "oy": "9%",
+      "ring": "76%",
+      "rx": "4%",
+      "ry": "-4%"
+    },
+    "home_section": "",
+    "sort_order": 11,
+    "banner_image": "",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": false,
+    "hero_order": 0,
+    "hero_tag": "",
+    "hero_watermark": "",
+    "hero_date_text": "",
+    "hero_image": "",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-12-18",
+        "time": "19:30",
+        "status": "hot",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 4500
+      },
+      {
+        "key": "rock",
+        "price": 3200
+      },
+      {
+        "key": "stand",
+        "price": 2500
+      },
+      {
+        "key": "upper",
+        "price": 1900
+      },
+      {
+        "key": "back",
+        "price": 1200
+      }
+    ]
+  },
+  {
+    "slug": "stardust",
+    "en": "STARDUST",
+    "sub": "Countdown Concert",
+    "title": "星塵合唱團 2027 跨年演唱會",
+    "short_title": "",
+    "date_text": "2026.12.31（四）",
+    "starts_at": "2026-12-31",
+    "venue": "臺北南港展覽館",
+    "region": "臺北",
+    "category": "演唱會",
+    "price": 1500,
+    "status": "hot",
+    "note": "共 1 場",
+    "sale_at_text": "",
+    "sale_date": null,
+    "art": {
+      "bg": "#101820",
+      "c1": "#9FB7FF",
+      "c2": "rgba(159,183,255,0.45)",
+      "fg": "#FFFFFF",
+      "orb": "30%",
+      "ox": "58%",
+      "oy": "12%",
+      "ring": "90%",
+      "rx": "-6%",
+      "ry": "-14%"
+    },
+    "home_section": "",
+    "sort_order": 12,
+    "banner_image": "",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": false,
+    "hero_order": 0,
+    "hero_tag": "",
+    "hero_watermark": "",
+    "hero_date_text": "",
+    "hero_image": "",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-12-31",
+        "time": "19:30",
+        "status": "hot",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 5700
+      },
+      {
+        "key": "rock",
+        "price": 4000
+      },
+      {
+        "key": "stand",
+        "price": 3200
+      },
+      {
+        "key": "upper",
+        "price": 2300
+      },
+      {
+        "key": "back",
+        "price": 1500
+      }
+    ]
+  },
+  {
+    "slug": "blue-hour",
+    "en": "BLUE HOUR",
+    "sub": "Jazz Night Live",
+    "title": "爵士之夜《Blue Hour》",
+    "short_title": "",
+    "date_text": "2026.11.07（六）",
+    "starts_at": "2026-11-07",
+    "venue": "Blue Note Taipei",
+    "region": "臺北",
+    "category": "演唱會",
+    "price": 1600,
+    "status": "soldout",
+    "note": "開放候補登記",
+    "sale_at_text": "",
+    "sale_date": null,
+    "art": {
+      "bg": "#123A6B",
+      "c1": "#F2C14E",
+      "c2": "rgba(255,255,255,0.35)",
+      "fg": "#FFFFFF",
+      "orb": "54%",
+      "ox": "23%",
+      "oy": "6%",
+      "ring": "54%",
+      "rx": "23%",
+      "ry": "6%"
+    },
+    "home_section": "",
+    "sort_order": 13,
+    "banner_image": "",
+    "about": "",
+    "address": "",
+    "organizer": "",
+    "hero_enabled": false,
+    "hero_order": 0,
+    "hero_tag": "",
+    "hero_watermark": "",
+    "hero_date_text": "",
+    "hero_image": "",
+    "hero_position": "center 30%",
+    "sessions": [
+      {
+        "date": "2026-11-07",
+        "time": "19:30",
+        "status": "soldout",
+        "desc": "演出約 150 分鐘",
+        "is_extra": false,
+        "doors": "",
+        "qr_open": ""
+      }
+    ],
+    "tiers": [
+      {
+        "key": "vip",
+        "price": 6000
+      },
+      {
+        "key": "rock",
+        "price": 4300
+      },
+      {
+        "key": "stand",
+        "price": 3400
+      },
+      {
+        "key": "upper",
+        "price": 2500
+      },
+      {
+        "key": "back",
+        "price": 1600
+      }
+    ]
+  }
+]
